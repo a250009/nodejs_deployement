@@ -3,10 +3,10 @@ pipeline {
 
     stages {
         stage('Clone') {
-            steps {
-                git 'https://github.com/a250009/nodejs_deployement.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/a250009/nodejs_deployement.git'
+    }
+}
 
         stage('Install Dependencies') {
             steps {
